@@ -52,7 +52,7 @@ public class CrimeFragment extends Fragment {
         });
         
         mDateButton = (Button)v.findViewById(R.id.crime_date);
-        mDateButton.setText(DateFormat.getLongDateFormat(getActivity()).format(mCrime.getDate()));
+        mDateButton.setText(DateFormat.format("E, d MMM yyyy", mCrime.getDate()));
         mDateButton.setEnabled(false);
         
         mSolvedCheckBox = (CheckBox)v.findViewById(R.id.crime_solved);
